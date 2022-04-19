@@ -19,7 +19,14 @@ export default {
   },
   head() {
     return {
-      title: `상품 상세 페이지 - ${this.productDetail.pdName}`
+      title: `상품 상세 페이지 - ${this.productDetail.pdName}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `상품 상세 페이지 - ${this.productDetail.pdName}`
+        }
+      ]
     }
   },
 }
